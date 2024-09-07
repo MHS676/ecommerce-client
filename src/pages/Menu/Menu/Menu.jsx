@@ -26,7 +26,7 @@ const Menu = () => {
     return (
         <div>
             <Helmet>
-                <title>Bistro Boss | Menu</title>
+                <title>Menu</title>
             </Helmet>
             <Cover img='https://static.vecteezy.com/system/resources/thumbnails/008/683/294/small_2x/interior-design-concept-sale-of-home-decorations-and-furniture-during-promotions-and-discounts-it-is-surrounded-by-beds-sofas-armchairs-and-advertising-spaces-banner-pastel-background-3d-render-photo.jpg' title="Our Menu" />
             {/* Main cover */}

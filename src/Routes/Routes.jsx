@@ -91,7 +91,7 @@ import AdminHome from "../pages/Dashboard/AdminHome/AdminHome";
         {
           path: 'updateItem/:id',
           element: <AdminRoute><UpdateItem></UpdateItem></AdminRoute>,
-          loader: ({params}) => fetch(`http://localhost:5000/menu/${params.id}`)
+          loader: ({params}) => fetch(`${import.meta.env.VITE_SERVER_DOMAIN}/menu/${params.id}`)
         },
         {
           path: 'users',
