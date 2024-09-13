@@ -1,6 +1,5 @@
 Admin: Hasan1@gmail.com pass: Aa@123456
 
-# My Vite React Project
 
 This is a React project bootstrapped with [Vite](https://vitejs.dev/) and set up with React Router, Tailwind CSS, and DaisyUI for styling.
 
