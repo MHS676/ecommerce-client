@@ -33,3 +33,37 @@ To start the development server, run:
 
 ```bash
 npm run dev
+
+
+# Clone the repository
+git clone https://github.com/MHS676/pos-server.git
+cd pos-server
+
+# Install dependencies
+npm install
+
+# Create .env file in project root
+# Replace <user>, <password>, <host>, <port>, <database> with your Postgres credentials
+echo "DATABASE_URL=postgresql://<user>:<password>@<host>:<port>/<database>?schema=public
+JWT_SECRET=supersecret" > .env
+
+# Generate Prisma client
+npx prisma generate
+
+# Push schema to database
+npx prisma db push
+# OR with migration
+npx prisma migrate dev --name init
+
+# Seed the database (creates default org, categories, products)
+npm run db:seed
+# OR
+npx prisma db seed
+
+# Start the server in development mode
+npm run start:dev
+
+# Production build & run
+npm run build
+npm run start:prod
+
